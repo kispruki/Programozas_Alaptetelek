@@ -1,21 +1,31 @@
-import random as r
+from random import randint as r
 
 
-l = [r.randint(-25, 25)for i in range(15)]
+l = [r(-25,25) for i in range(15)]
+
+print(l)
 
 osszeg = 0
+
 for i in l:
-    osszeg += i
+	osszeg += i
+
+print(f"A lista összege: {osszeg}.")
 
 darab = 0
 for i in l:
-    if i == 0:
-        darab += 1
+	if i%2 == 0:
+		darab+=1
+
+print(f"A listában {darab}db páros szam található.")
 
 max, min = l[0], l[0]
+
 for i in l:
-    if i < min: min = i
-    if i > max: max = i
+	if i<min: min = i
+	if i>max: max = i
+
+print(f"A lista legkisebb értéke: {min}.\nA lista legnagyobb értéke: {max}.")
 
 van = False
 index = 0
@@ -25,9 +35,6 @@ while not van and index <len(l):
         van = True
         hol = index
     index += 1 
-
-print(l)
-print(f"Összeg: {osszeg};\n{darab} Darab 0 van a listában;\nA legkisebb szám:{min};\nA legnagyobb szám: {max}")
 
 if van:
     print(f"A listában van 10es szám. A {hol}. helyen.")

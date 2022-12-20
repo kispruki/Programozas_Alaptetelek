@@ -2,7 +2,7 @@ Feladat: Készícs egy 15 elemű listát.
 Töltsd fel véletlen számokkal [-25; 25] intervallumban.
 
 Írd ki a lista összegét.
-Írd ki, hogy hányszor fordul elő a 0.
+Írd ki, hogy hány darab páros szam van a listán.
 Írd ki a lista legkisebb és legnagyobb értékét.
 Írd ki, hogy van e a listában 10es szám és ha van 
 akkor azt is hogy hol.
